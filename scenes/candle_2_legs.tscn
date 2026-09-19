@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://b45cnj2qushvu"]
+
+[ext_resource type="Texture2D" uid="uid://2v878fgxs8pf" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_2_1.png" id="1_8idds"]
+[ext_resource type="Script" uid="uid://uvbk371m37xf" path="res://script/candle_2_legs.gd" id="1_uwf3f"]
+[ext_resource type="Texture2D" uid="uid://dw03krrnr5bs" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_2_2.png" id="2_uwf3f"]
+[ext_resource type="Texture2D" uid="uid://daui3dvta3rfd" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_2_3.png" id="3_u1cxp"]
+[ext_resource type="Texture2D" uid="uid://cq161t3gsxm88" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_2_4.png" id="4_gbyyw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33t2k"]
+atlas = ExtResource("1_8idds")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrvfv"]
+atlas = ExtResource("2_uwf3f")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfuww"]
+atlas = ExtResource("3_u1cxp")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mt0cd"]
+atlas = ExtResource("4_gbyyw")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3tesh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33t2k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrvfv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfuww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mt0cd")
+}],
+"loop": 1,
+"name": &"cd",
+"speed": 6.0
+}]
+
+[node name="candle2legs" type="CharacterBody2D" unique_id=468094726]
+script = ExtResource("1_uwf3f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2091140547]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_3tesh")
+animation = &"cd"
+frame_progress = 0.57265556

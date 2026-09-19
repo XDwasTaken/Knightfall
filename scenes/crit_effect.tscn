@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bhblyqblcvdys"]
+
+[ext_resource type="Texture2D" uid="uid://dv70hc18j8x2g" path="res://Joenny's 2D Assets/Characters(100x100)/Soldier/Soldier(Split Effects)/Soldier-Attack02_Effect.png" id="1_4bm73"]
+[ext_resource type="Script" uid="uid://dgqay176stmya" path="res://script/crit_effect.gd" id="1_r2vc0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2vc0"]
+atlas = ExtResource("1_4bm73")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etc1m"]
+atlas = ExtResource("1_4bm73")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wodd"]
+atlas = ExtResource("1_4bm73")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mrr1"]
+atlas = ExtResource("1_4bm73")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wls2k"]
+atlas = ExtResource("1_4bm73")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4p6qe"]
+atlas = ExtResource("1_4bm73")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2vc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etc1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wodd")
+}, {
+"duration": 1.1,
+"texture": SubResource("AtlasTexture_8mrr1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wls2k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4p6qe")
+}],
+"loop": 0,
+"name": &"play",
+"speed": 9.0
+}]
+
+[node name="CritEffect" type="Node2D" unique_id=1691229850]
+texture_filter = 1
+script = ExtResource("1_r2vc0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=837874522]
+texture_filter = 1
+position = Vector2(-17, -3)
+scale = Vector2(1.45, 1.45)
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+animation = &"play"
+frame = 4

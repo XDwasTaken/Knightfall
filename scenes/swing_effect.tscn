@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bgnh5xmbyukib"]
+
+[ext_resource type="Script" uid="uid://b5t55kr6562nh" path="res://script/swing_effect.gd" id="1_km7y3"]
+[ext_resource type="Texture2D" uid="uid://ogmrnmlw7pj8" path="res://Joenny's 2D Assets/Characters(100x100)/Soldier/Soldier(Split Effects)/Soldier-Attack01_Effect.png" id="2_lt3yl"]
+[ext_resource type="Texture2D" uid="uid://dv70hc18j8x2g" path="res://Joenny's 2D Assets/Characters(100x100)/Soldier/Soldier(Split Effects)/Soldier-Attack02_Effect.png" id="3_lt3yl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vf3q"]
+atlas = ExtResource("3_lt3yl")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3arh"]
+atlas = ExtResource("2_lt3yl")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpu3o"]
+atlas = ExtResource("2_lt3yl")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4vf3q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3arh")
+}, {
+"duration": 1.1,
+"texture": SubResource("AtlasTexture_wpu3o")
+}, {
+"duration": 1.1,
+"texture": SubResource("AtlasTexture_wpu3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4vf3q")
+}],
+"loop": 0,
+"name": &"play",
+"speed": 14.0
+}]
+
+[node name="SwingEffect" type="Node2D" unique_id=1072379596]
+script = ExtResource("1_km7y3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1694774458]
+texture_filter = 1
+position = Vector2(-15, -6)
+scale = Vector2(1.28, 1.28)
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+animation = &"play"
+frame = 4
+frame_progress = 1.0

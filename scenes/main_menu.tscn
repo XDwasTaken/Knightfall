@@ -1,0 +1,202 @@
+[gd_scene format=3 uid="uid://ifibp5by6rmd"]
+
+[ext_resource type="Script" uid="uid://b27c4c0v0vgcg" path="res://script/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="FontFile" uid="uid://b6ri4idvp0v8n" path="res://Poco.ttf" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://bmflfx7anjbsx" path="res://螢幕擷取畫面 2026-09-15 204356.png" id="2_bqqt6"]
+[ext_resource type="AudioStream" uid="uid://fjru8q08rpth" path="res://Joenny's 2D Assets/Audio/Musics/3 - Revelation.ogg" id="4_wu84c"]
+[ext_resource type="PackedScene" uid="uid://bbxnjsy1lfuin" path="res://scenes/MenuAnimation.tscn" id="5_8ln24"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jt3n0"]
+texture = ExtResource("2_bqqt6")
+modulate_color = Color(0.502947, 0.502947, 0.502947, 0.88235295)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+bg_color = Color(1, 1, 1, 0.9764706)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dd4i"]
+bg_color = Color(0.6554605, 0.6554605, 0.6554605, 0.7490196)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_jk1qb"]
+color = Color(1, 1, 1, 1)
+thickness = 8
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_5dd4i"]
+color = Color(0.2932252, 0.7307054, 0.9999997, 1)
+thickness = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="MainMenu" type="Control" unique_id=429683549]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ekxnf")
+
+[node name="MenuAnimation" parent="." unique_id=1523887085 instance=ExtResource("5_8ln24")]
+position = Vector2(954.00006, 529)
+scale = Vector2(11.34, 11.34)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1314651031]
+stream = ExtResource("4_wu84c")
+autoplay = true
+parameters/looping = true
+
+[node name="Panel" type="Panel" parent="." unique_id=1619926091]
+visible = false
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -107.0
+offset_right = -66.0
+offset_bottom = -107.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.027925268
+scale = Vector2(1.1, 1.1)
+theme_override_styles/panel = SubResource("StyleBoxTexture_jt3n0")
+
+[node name="Select" type="VBoxContainer" parent="." unique_id=555935414]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -191.25
+offset_top = -122.0
+offset_right = 191.25
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 35
+
+[node name="start" type="Button" parent="Select" unique_id=952629254]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_ekxnf")
+text = "Start"
+
+[node name="options" type="Button" parent="Select" unique_id=1119422057]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_ekxnf")
+text = "Options"
+
+[node name="leave" type="Button" parent="Select" unique_id=2102175359]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_ekxnf")
+text = "Leave :("
+
+[node name="Title" type="Label" parent="." unique_id=1508659710]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 137.0
+offset_right = 1416.0
+offset_bottom = 377.0
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 200
+text = "Knight Fall"
+
+[node name="OptionPanel" type="Panel" parent="." unique_id=2103168272]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -409.75
+offset_top = -269.0
+offset_right = 409.75
+offset_bottom = 269.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5dd4i")
+
+[node name="Label" type="Label" parent="OptionPanel" unique_id=1559089210]
+layout_mode = 0
+offset_left = 286.75
+offset_top = -14.0
+offset_right = 537.75
+offset_bottom = 85.0
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 81
+text = "Options"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="OptionPanel" unique_id=875819656]
+layout_mode = 0
+offset_left = 176.75
+offset_top = 134.0
+offset_right = 216.75
+offset_bottom = 174.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionPanel" unique_id=1460942834]
+layout_mode = 0
+offset_left = 154.75
+offset_top = 128.0
+offset_right = 681.75
+offset_bottom = 293.0
+
+[node name="Label2" type="Label" parent="OptionPanel/VBoxContainer" unique_id=403550668]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 32
+text = "Volume"
+
+[node name="Fullscreen" type="CheckButton" parent="OptionPanel/VBoxContainer" unique_id=177039592]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 32
+text = "Toggle fullscreen mode   "
+
+[node name="VolumeSlider" type="HSlider" parent="OptionPanel" unique_id=2011706294]
+layout_mode = 0
+offset_left = 263.75
+offset_top = 151.0
+offset_right = 643.25
+offset_bottom = 167.0
+theme_override_styles/slider = SubResource("StyleBoxLine_jk1qb")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_5dd4i")
+value = 100.0
+
+[node name="BackButton" type="Button" parent="OptionPanel" unique_id=1418881964]
+layout_mode = 0
+offset_left = 296.75
+offset_top = 326.0
+offset_right = 520.7278
+offset_bottom = 399.8844
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
+text = "Back"
+
+[connection signal="pressed" from="Select/start" to="." method="start"]
+[connection signal="pressed" from="Select/options" to="." method="options"]
+[connection signal="pressed" from="Select/leave" to="." method="leave"]

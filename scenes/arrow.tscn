@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bkl7kl5p23ajl"]
+
+[ext_resource type="Script" uid="uid://nnrghjxsiju0" path="res://script/arrow.gd" id="1_23jat"]
+[ext_resource type="Texture2D" uid="uid://dciqvrcawu23j" path="res://Joenny's 2D Assets/Arrow(Projectile)/Arrow01(32x32).png" id="1_umosx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wyax8"]
+size = Vector2(20, 7)
+
+[node name="Arrow" type="Area2D" unique_id=1196271240]
+position = Vector2(10, -1)
+script = ExtResource("1_23jat")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1560124347]
+texture_filter = 1
+position = Vector2(-10, 1)
+texture = ExtResource("1_umosx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1594033993]
+position = Vector2(-10, 1)
+shape = SubResource("RectangleShape2D_wyax8")

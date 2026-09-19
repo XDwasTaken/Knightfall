@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cql2t7dlbedi3"
+path="res://.godot/imported/Menu8.wav-32bb9d94e58c065842ed64c8127ba7c4.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Menu/Menu8.wav"
+dest_files=["res://.godot/imported/Menu8.wav-32bb9d94e58c065842ed64c8127ba7c4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

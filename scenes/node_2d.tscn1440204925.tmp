@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://3yrk6yc2aok8"]
+
+[ext_resource type="PackedScene" uid="uid://cqmw20jcdw4st" path="res://scenes/player.tscn" id="1_6e84v"]
+[ext_resource type="PackedScene" uid="uid://bkl7kl5p23ajl" path="res://scenes/arrow.tscn" id="2_4dvvg"]
+[ext_resource type="PackedScene" uid="uid://c351njcb8rgxf" path="res://scenes/gilbert.tscn" id="3_rnjyy"]
+
+[node name="Node2D" type="Node2D" unique_id=916610086]
+
+[node name="Player" parent="." unique_id=444141322 instance=ExtResource("1_6e84v")]
+
+[node name="Arrow" parent="." unique_id=1196271240 instance=ExtResource("2_4dvvg")]
+
+[node name="Gilbert" parent="." unique_id=1576861988 instance=ExtResource("3_rnjyy")]

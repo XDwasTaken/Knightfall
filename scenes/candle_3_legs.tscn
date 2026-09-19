@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://445hul8n321j"]
+
+[ext_resource type="Texture2D" uid="uid://bdylhc83ou2hr" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_1_1.png" id="1_42rjd"]
+[ext_resource type="Script" uid="uid://bkrrhm2wpbqid" path="res://script/candle_3_legs.gd" id="1_vlj42"]
+[ext_resource type="Texture2D" uid="uid://c503h6xvmake4" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_1_2.png" id="2_vlj42"]
+[ext_resource type="Texture2D" uid="uid://c5iatg7twk1kk" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_1_3.png" id="3_kn8ua"]
+[ext_resource type="Texture2D" uid="uid://bp2r10u43jav4" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_1_4.png" id="4_jhbkc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lr54"]
+atlas = ExtResource("1_42rjd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4yfq"]
+atlas = ExtResource("2_vlj42")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2ujw"]
+atlas = ExtResource("3_kn8ua")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qexo5"]
+atlas = ExtResource("4_jhbkc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lr54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4yfq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t2ujw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qexo5")
+}],
+"loop": 1,
+"name": &"glow",
+"speed": 5.0
+}]
+
+[node name="candle3legs" type="CharacterBody2D" unique_id=1506039931]
+script = ExtResource("1_vlj42")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1349907580]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+animation = &"glow"
+frame_progress = 0.6836089

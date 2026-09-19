@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cmhi50ief6d65"]
+
+[ext_resource type="Texture2D" uid="uid://bnfpdqhfec55i" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/flag/flag_1.png" id="1_e6vwc"]
+[ext_resource type="Script" uid="uid://bqwr4t4ekiun" path="res://script/flags.gd" id="1_j5w1v"]
+[ext_resource type="Texture2D" uid="uid://tot4m4ungj4r" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/flag/flag_2.png" id="2_j5w1v"]
+[ext_resource type="Texture2D" uid="uid://rdvwkigocg1i" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/flag/flag_3.png" id="3_bwq35"]
+[ext_resource type="Texture2D" uid="uid://cnrem4wfalq74" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/flag/flag_4.png" id="4_h33lr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_72wca"]
+atlas = ExtResource("1_e6vwc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nun8d"]
+atlas = ExtResource("2_j5w1v")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjfo2"]
+atlas = ExtResource("3_bwq35")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqlwl"]
+atlas = ExtResource("4_h33lr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0u48w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72wca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nun8d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjfo2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqlwl")
+}],
+"loop": 1,
+"name": &"blowflag",
+"speed": 5.0
+}]
+
+[node name="flags" type="CharacterBody2D" unique_id=1536857644]
+script = ExtResource("1_j5w1v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=929323438]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_0u48w")
+animation = &"blowflag"
+frame_progress = 0.9737487

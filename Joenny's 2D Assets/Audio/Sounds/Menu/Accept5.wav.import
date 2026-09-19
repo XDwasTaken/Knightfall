@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dkuel06bm0jdq"
+path="res://.godot/imported/Accept5.wav-e307c168a30f4e703f8d082f29e49304.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Menu/Accept5.wav"
+dest_files=["res://.godot/imported/Accept5.wav-e307c168a30f4e703f8d082f29e49304.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

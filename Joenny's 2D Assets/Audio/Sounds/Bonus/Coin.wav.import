@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cy8f1av633nma"
+path="res://.godot/imported/Coin.wav-477a5257a293c35af0e96b9eb3771a65.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Bonus/Coin.wav"
+dest_files=["res://.godot/imported/Coin.wav-477a5257a293c35af0e96b9eb3771a65.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

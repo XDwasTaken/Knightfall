@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://3nw7ibjapus6"
+path="res://.godot/imported/Fireball.wav-f6d9182f4648c5f325df50da5616f1a4.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Elemental/Fireball.wav"
+dest_files=["res://.godot/imported/Fireball.wav-f6d9182f4648c5f325df50da5616f1a4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

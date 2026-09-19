@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://di0p1okxm4rle"]
+
+[ext_resource type="Script" uid="uid://d7hkgwrfaj82" path="res://script/heal_pot.gd" id="1_acnd2"]
+[ext_resource type="Texture2D" uid="uid://j7nqk5iasat7" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/flasks/flasks_1_1.png" id="2_b54aa"]
+[ext_resource type="Texture2D" uid="uid://b74d6y6cxnoor" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/flasks/flasks_1_2.png" id="3_v75x6"]
+[ext_resource type="Texture2D" uid="uid://c25kl8o32io82" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/flasks/flasks_1_3.png" id="4_amnw6"]
+[ext_resource type="Texture2D" uid="uid://bpf4t5upcv7cy" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/flasks/flasks_1_4.png" id="5_g656y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jt3n0"]
+atlas = ExtResource("2_b54aa")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pfoh"]
+atlas = ExtResource("3_v75x6")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mchk4"]
+atlas = ExtResource("4_amnw6")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmqbl"]
+atlas = ExtResource("5_g656y")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jt3n0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7pfoh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mchk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmqbl")
+}],
+"loop": 1,
+"name": &"flow",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4kxuq"]
+radius = 9.61743
+
+[node name="HealPot" type="CharacterBody2D" unique_id=1367295671]
+script = ExtResource("1_acnd2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=683407871]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+animation = &"flow"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=647579073]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=905873927]
+shape = SubResource("CircleShape2D_4kxuq")

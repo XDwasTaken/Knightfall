@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bj63dwqpb2nmy"]
+
+[ext_resource type="Script" uid="uid://de440h3ssvc7g" path="res://script/room_area.gd" id="1_lxebb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_08kqv"]
+size = Vector2(188.5, 269)
+
+[node name="RoomArea2" type="Area2D" unique_id=129722236]
+script = ExtResource("1_lxebb")
+entrance_proximity_path = NodePath("../EntranceProximity")
+exit_proximity_path = NodePath("../ExitProximity")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1123793519]
+position = Vector2(291.75, 539.5)
+shape = SubResource("RectangleShape2D_08kqv")

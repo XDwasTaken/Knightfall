@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://bahfwtng23kxt"]
+
+[ext_resource type="Texture2D" uid="uid://357cjsprqumi" path="res://Joenny's 2D Assets/Character/NinjaEskimo/SpriteSheet.png" id="1_kbk2t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_172wr"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(0, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2hoc"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(0, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fldb1"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(16, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_guvtl"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(32, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igmy8"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(48, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdtqu"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qsfm"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bv48q"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k22d5"]
+atlas = ExtResource("1_kbk2t")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+animations = [{
+"frames": [{
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_172wr")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_g2hoc")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_fldb1")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_guvtl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igmy8")
+}],
+"loop": 0,
+"name": &"aura",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdtqu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7qsfm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bv48q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k22d5")
+}],
+"loop": 1,
+"name": &"waiting",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4kxuq"]
+radius = 7.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mti6b"]
+radius = 13.0
+
+[node name="SnowNinja" type="CharacterBody2D" unique_id=805947010]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1667560655]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+animation = &"waiting"
+autoplay = "waiting"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=964469891]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_4kxuq")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1481458635]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=169415730]
+shape = SubResource("CircleShape2D_mti6b")

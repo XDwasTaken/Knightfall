@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dk4klcytqjvb7"]
+
+[ext_resource type="Script" uid="uid://cq62se1uecqas" path="res://script/remakeproximity.gd" id="1_vbfnc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mti6b"]
+size = Vector2(22, 34)
+
+[node name="ExtranceProx2" type="Area2D" unique_id=640010419]
+script = ExtResource("1_vbfnc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=501217445]
+position = Vector2(167, 544)
+shape = SubResource("RectangleShape2D_mti6b")

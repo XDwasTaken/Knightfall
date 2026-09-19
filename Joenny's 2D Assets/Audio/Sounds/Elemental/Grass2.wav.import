@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvaxtve845ldk"
+path="res://.godot/imported/Grass2.wav-94a99bc43f5a68902b41eddc61e1e160.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Elemental/Grass2.wav"
+dest_files=["res://.godot/imported/Grass2.wav-94a99bc43f5a68902b41eddc61e1e160.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

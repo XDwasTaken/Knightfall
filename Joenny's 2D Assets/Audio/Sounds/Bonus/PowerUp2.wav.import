@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d3ovpkthlhmq2"
+path="res://.godot/imported/PowerUp2.wav-3f63bf9344996bce39e75da2628c6ce7.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Bonus/PowerUp2.wav"
+dest_files=["res://.godot/imported/PowerUp2.wav-3f63bf9344996bce39e75da2628c6ce7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

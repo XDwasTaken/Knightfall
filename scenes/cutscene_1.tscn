@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b2w76vp6x422k"]
+
+[sub_resource type="TileSet" id="TileSet_4kxuq"]
+
+[sub_resource type="Animation" id="Animation_812q8"]
+resource_name = "start"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ds4i"]
+_data = {
+&"start": SubResource("Animation_812q8")
+}
+
+[node name="cutscene1" type="Node2D" unique_id=1288369977]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1660873687]
+tile_set = SubResource("TileSet_4kxuq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1270822174]
+libraries/ = SubResource("AnimationLibrary_6ds4i")

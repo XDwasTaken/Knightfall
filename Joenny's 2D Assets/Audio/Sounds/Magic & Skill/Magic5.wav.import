@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cx0v452k2i85h"
+path="res://.godot/imported/Magic5.wav-4609b53f91a321343bc1f0fa89b443f8.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Magic & Skill/Magic5.wav"
+dest_files=["res://.godot/imported/Magic5.wav-4609b53f91a321343bc1f0fa89b443f8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

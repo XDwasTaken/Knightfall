@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d054mlij2157c"
+path="res://.godot/imported/Alert6.wav-72f92763525d9e3bf126a3d2f5c323e7.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Alert/Alert6.wav"
+dest_files=["res://.godot/imported/Alert6.wav-72f92763525d9e3bf126a3d2f5c323e7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

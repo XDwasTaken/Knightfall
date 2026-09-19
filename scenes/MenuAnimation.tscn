@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bbxnjsy1lfuin"]
+
+[ext_resource type="Script" uid="uid://cqajei3qragry" path="res://script/menu_animation.gd" id="1_14nw5"]
+[ext_resource type="Texture2D" uid="uid://viwrelqgpjll" path="res://menuscenery/sun.png" id="1_j3ira"]
+[ext_resource type="Texture2D" uid="uid://c6uta7mtnlyux" path="res://skyremake.png" id="2_14nw5"]
+[ext_resource type="Texture2D" uid="uid://bwrwxs411in0u" path="res://menuscenery/reflect.png" id="3_14nw5"]
+[ext_resource type="Texture2D" uid="uid://dlmo4uitecwjp" path="res://menuscenery/mountains.png" id="4_skput"]
+[ext_resource type="Texture2D" uid="uid://b5c0jkstffh65" path="res://menuscenery/scenery.png" id="5_0gdbj"]
+
+[node name="fadein" type="Node2D" unique_id=625171266]
+script = ExtResource("1_14nw5")
+
+[node name="sky" type="Sprite2D" parent="." unique_id=686718357]
+texture_filter = 1
+texture = ExtResource("2_14nw5")
+
+[node name="sun" type="Sprite2D" parent="." unique_id=612429774]
+texture_filter = 1
+texture = ExtResource("1_j3ira")
+
+[node name="reflect" type="Sprite2D" parent="." unique_id=1501408503]
+texture_filter = 1
+texture = ExtResource("3_14nw5")
+
+[node name="mountains" type="Sprite2D" parent="." unique_id=1135775147]
+texture_filter = 1
+texture = ExtResource("4_skput")
+
+[node name="scenery" type="Sprite2D" parent="." unique_id=335859807]
+texture_filter = 1
+texture = ExtResource("5_0gdbj")

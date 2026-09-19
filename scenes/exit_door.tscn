@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://br381mfm5gmno"]
+
+[ext_resource type="Texture2D" uid="uid://c7t3l1mxc1e1t" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="1_syxuu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syxuu"]
+atlas = ExtResource("1_syxuu")
+region = Rect2(96, 96, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yk4m6"]
+atlas = ExtResource("1_syxuu")
+region = Rect2(128, 32, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syxuu")
+}],
+"loop": 1,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yk4m6")
+}],
+"loop": 1,
+"name": &"open",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+size = Vector2(30, 14)
+
+[node name="ExitDoor" type="CharacterBody2D" unique_id=666291538]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=419542405]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+animation = &"closed"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1532404368]
+shape = SubResource("RectangleShape2D_4kxuq")

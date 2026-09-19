@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cyj6t448u2d83"]
+
+[ext_resource type="Script" uid="uid://bwgj0jkngtfx0" path="res://script/torch.gd" id="1_ndh0a"]
+[ext_resource type="Texture2D" uid="uid://tgy15rbquxjl" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/torch_1.png" id="2_ktql7"]
+[ext_resource type="Texture2D" uid="uid://c78g34mgig5ae" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/torch_2.png" id="3_gybtl"]
+[ext_resource type="Texture2D" uid="uid://bb0l50g2xo202" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/torch_3.png" id="4_21l5o"]
+[ext_resource type="Texture2D" uid="uid://4l8yc8tnq63a" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/torch_4.png" id="5_wjrvc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmqbl"]
+atlas = ExtResource("2_ktql7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qkxkb"]
+atlas = ExtResource("3_gybtl")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8pa6"]
+atlas = ExtResource("4_21l5o")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bto7"]
+atlas = ExtResource("5_wjrvc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmqbl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qkxkb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8pa6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bto7")
+}],
+"loop": 1,
+"name": &"flame",
+"speed": 8.0
+}]
+
+[node name="torch" type="CharacterBody2D" unique_id=1089990509]
+texture_filter = 1
+script = ExtResource("1_ndh0a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=826636615]
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+animation = &"flame"
+frame_progress = 0.6809764

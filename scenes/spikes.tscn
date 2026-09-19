@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dlb42j8sb0twj"]
+
+[ext_resource type="Script" uid="uid://l1piv5ptkwcw" path="res://script/spikes.gd" id="1_0vi4p"]
+[ext_resource type="Texture2D" uid="uid://bv3tb1310cavo" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/peaks/peaks_3.png" id="1_kd5gq"]
+[ext_resource type="Texture2D" uid="uid://rhrq7cqktvtk" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/peaks/peaks_4.png" id="2_0vi4p"]
+[ext_resource type="Texture2D" uid="uid://i46p100jwqoy" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/peaks/peaks_2.png" id="3_w4mxr"]
+[ext_resource type="Texture2D" uid="uid://dfp0ccij5qae3" path="res://2D Pixel Dungeon Asset Pack v2.0/2D Pixel Dungeon Asset Pack/items and trap_animation/peaks/peaks_1.png" id="4_xa8pu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmogx"]
+atlas = ExtResource("1_kd5gq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hxik"]
+atlas = ExtResource("2_0vi4p")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d77p4"]
+atlas = ExtResource("3_w4mxr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyr5e"]
+atlas = ExtResource("4_xa8pu")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmogx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hxik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d77p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyr5e")
+}],
+"loop": 0,
+"name": &"spiking",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+size = Vector2(16, 16)
+
+[node name="Spikes" type="CharacterBody2D" unique_id=507654147]
+script = ExtResource("1_0vi4p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1750698547]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+animation = &"spiking"
+frame = 3
+frame_progress = 1.0
+
+[node name="DamageZone" type="Area2D" parent="." unique_id=1107793093]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone" unique_id=907791863]
+shape = SubResource("RectangleShape2D_4kxuq")

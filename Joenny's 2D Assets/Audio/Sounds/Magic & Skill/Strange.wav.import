@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cgv5yr60ndvyy"
+path="res://.godot/imported/Strange.wav-0760ae489b8b59452e325e05b5325e05.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Magic & Skill/Strange.wav"
+dest_files=["res://.godot/imported/Strange.wav-0760ae489b8b59452e325e05b5325e05.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

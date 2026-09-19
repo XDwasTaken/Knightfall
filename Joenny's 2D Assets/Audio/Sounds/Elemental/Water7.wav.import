@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://co6gfw2jfog3k"
+path="res://.godot/imported/Water7.wav-8b1b519ccda3c20a0729aaa638a586ea.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Elemental/Water7.wav"
+dest_files=["res://.godot/imported/Water7.wav-8b1b519ccda3c20a0729aaa638a586ea.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

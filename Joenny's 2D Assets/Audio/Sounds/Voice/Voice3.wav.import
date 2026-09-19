@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dv56hp4kr83e5"
+path="res://.godot/imported/Voice3.wav-3dc464dc592fb93c878728bb398c89ad.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Voice/Voice3.wav"
+dest_files=["res://.godot/imported/Voice3.wav-3dc464dc592fb93c878728bb398c89ad.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

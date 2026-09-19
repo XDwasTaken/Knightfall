@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://doowe63irewby"
+path="res://.godot/imported/Success4.wav-0e60e2e87a25598867f09878059a882e.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Jingles/Success4.wav"
+dest_files=["res://.godot/imported/Success4.wav-0e60e2e87a25598867f09878059a882e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

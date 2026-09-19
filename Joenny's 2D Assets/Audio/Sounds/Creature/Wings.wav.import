@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cg6syl3r0meiy"
+path="res://.godot/imported/Wings.wav-02e89c58a3c5ff590f344a5393ad7111.sample"
+
+[deps]
+
+source_file="res://Joenny's 2D Assets/Audio/Sounds/Creature/Wings.wav"
+dest_files=["res://.godot/imported/Wings.wav-02e89c58a3c5ff590f344a5393ad7111.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

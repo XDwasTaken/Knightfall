@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://3yrk6yc2aok8"]
+
+[ext_resource type="PackedScene" uid="uid://c30xehymmp3is" path="res://scenes/lvl1.tscn" id="1_4dvvg"]
+[ext_resource type="PackedScene" uid="uid://cg6xdk3lsglot" path="res://scenes/level_2.tscn" id="3_rnjyy"]
+[ext_resource type="PackedScene" uid="uid://b2w76vp6x422k" path="res://scenes/cutscene_1.tscn" id="32_unr0g"]
+
+[node name="Main" type="Node2D" unique_id=916610086]
+
+[node name="Level1" parent="." unique_id=461470629 instance=ExtResource("1_4dvvg")]
+
+[node name="Level2" parent="." unique_id=986719129 instance=ExtResource("3_rnjyy")]
+visible = false
+
+[node name="cutscene1" parent="." unique_id=1288369977 instance=ExtResource("32_unr0g")]
